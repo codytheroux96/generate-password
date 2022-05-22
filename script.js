@@ -69,8 +69,6 @@ function generatePassword() {
     passwordlist.push(symbolslist)
   }
   
-  //checking that passwordlist pulls from the correct arrays in correspondence to if they are true or false
-  console.log(passwordlist)
 
   //empty string for password to go into
   var generatedPassword = ""
@@ -79,11 +77,11 @@ function generatePassword() {
   for (var i = 0; i < length; i++) {
     var randomlist = getrandomitem(passwordlist)
     var randomchar = getrandomitem(randomlist)
-    console.log(randomchar)
+    
     //this adds the random character that we have selected and adds it to our generated password string which is where the password is going to appear
     generatedPassword += randomchar
   }
-  console.log(generatedPassword)
+  
 
 
 
