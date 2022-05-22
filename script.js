@@ -1,12 +1,20 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+//these functions are being used to pull random integers from my lists
 function randomint(min, max) {
-  return Math.floor(Math.random() * (max - min) + min)
+ if (!max){
+   max=min
+   min=0
+ }
+
+ var rand= Math.random()
+ return Math.floor(min*(1-rand)+rand*max)
 }
 
+ 
 function getrandomitem(list) {
-  return list[randomint(0, list.length - 1)]
+  return list[randomint(list.length)]
 }
 
 function generatePassword() {
@@ -60,12 +68,14 @@ function generatePassword() {
   if (confirmsymbols === true) {
     passwordlist.push(symbolslist)
   }
+  
   //checking that passwordlist pulls from the correct arrays in correspondence to if they are true or false
   console.log(passwordlist)
 
   //empty string for password to go into
   var generatedPassword = ""
 
+  //this pulls my random integers and puts them into a random list
   for (var i = 0; i < length; i++) {
     var randomlist = getrandomitem(passwordlist)
     var randomchar = getrandomitem(randomlist)
