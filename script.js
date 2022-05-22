@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
-  prompt("Are you ready for a password?")
+ var Input= prompt("Are you ready for a password?")
 }
 // Write password to the #password input
 function writePassword() {
