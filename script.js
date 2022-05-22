@@ -41,16 +41,16 @@ var passwordlist = []
 
 //this states that if the user selects ok when prompted if they want these in their password then var password list will select from the lists in these arrays
 if (confirmnumbers === true) {
-  passwordlist.push()
+  passwordlist.push(numberslist)
 }
 if (confirmlowercase === true){
-  passwordlist.push()
+  passwordlist.push(lowercaselist)
 }
 if (confirmuppercase === true) {
-  passwordlist.push()
+  passwordlist.push(uppercaselist)
 }
 if (confirmsymbols === true){
-  passwordlist.push()
+  passwordlist.push(symbolslist)
 }
 
 
