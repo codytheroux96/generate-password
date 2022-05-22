@@ -52,7 +52,7 @@ if (confirmuppercase === true) {
 if (confirmsymbols === true){
   passwordlist.push(symbolslist)
 }
-
+ console.log(passwordlist)
 
 
 }
