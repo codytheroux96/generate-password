@@ -71,6 +71,8 @@ function generatePassword() {
 
   //if the user selects no character type options it will default to all symbols
   if (passwordlist.length === 0) {
+    //added an alert letting the user know since they selected no character types then their password will be all symbols
+    alert("Your password will be just symbols since you selected no character types")
     passwordlist.push(symbolslist)
   }
 
