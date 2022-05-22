@@ -6,6 +6,11 @@ function randomInteger(min, max){
   return Math.floor(Math.random()*(max - min) + min)
 }
 
+//this function will give us a random position in a list
+function randomitem(list){
+  return list[randomInteger(0, passwordlist.length -1)]
+}
+
 function generatePassword() {
   //when the user clicks on the generate password button they will be prompted with the question "how many characters do you want in your password?"
   var Input = prompt("How many characters do you want in your password?")
@@ -60,7 +65,13 @@ if (confirmsymbols === true){
 //checking that passwordlist pulls from the correct arrays in correspondence to if they are true or false
  console.log(passwordlist)
 
+ //empty string for password to go into
  var generatedPassword = ""
+
+
+ for (var i = 0; i <length; i ++){
+   var item = passwordlist[randomInteger(0, passwordlist.length - 1)]
+ }
 
 
 }
