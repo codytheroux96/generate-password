@@ -6,3 +6,8 @@
 
 ## Visuals:
 ![Picture of Password Generator](./images/Password-Generator.png)
+
+## Resources:
+- [Repository](https://github.com/codytheroux96/generate-password)
+- [Password Generator](https://codytheroux96.github.io/generate-password/)
+
