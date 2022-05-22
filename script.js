@@ -9,8 +9,18 @@ var length = parseInt(Input)
 //if the user inputs anything that is not a number it will prompt them with this message
 if (isNaN(length)){
   alert("That's not a number.")
+  return
+}
+if (length < 8){
+  alert("Must be between 8 and 128 characters")
+  return
+}
+if (length > 128){
+  alert("Must be between 8 and 128 characters")
+  return
 }
 }
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
