@@ -22,13 +22,13 @@ function generatePassword() {
     return
   }
   //making this variable to prompt the user if they want to include numbers in the password by using confirm
-var numbers= confirm("Did you want to include numbers in your password?")
+var confirmnumbers= confirm("Did you want to include numbers in your password?")
 //making this variable to prompt the user if they want to include lowercase letters in the password by using confirm
-var lowercase = confirm ("Did you want to include lowercase letters in your password?")
+var confirmlowercase = confirm ("Did you want to include lowercase letters in your password?")
 //making this variable to prompt the user if they want to include uppercase letters in the password by using confirm
-var uppercase= confirm ("Did you want to include uppercase letters in your password?")
+var confirmuppercase= confirm ("Did you want to include uppercase letters in your password?")
 //making this variable to prompt the user if the want to include symbols in the password by using confirm
-var symbols= confirm ("Did you want to include symbols in your password?")
+var confirmsymbols= confirm ("Did you want to include symbols in your password?")
 
 //created arrays that hold the value of every number, lowercase letter, uppercase letter, and symbol
 var numberslist = ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
