@@ -30,6 +30,11 @@ var uppercase= confirm ("Did you want to include uppercase letters in your passw
 //making this variable to prompt the user if the want to include symbols in the password by using confirm
 var symbols= confirm ("Did you want to include symbols in your password?")
 
+//created arrays that hold the value of every number, lowercase letter, uppercase letter, and symbol
+var listofnumbers = ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
+var lowercaselist = ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
+var uppercaselist = ("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
+var symbolslist= ("!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "[", "{", "]", "}", "|", ";", ":", "'", "'", ",", "<", ".", ">", "/", "?")
 }
 
 
