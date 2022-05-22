@@ -77,18 +77,16 @@ function generatePassword() {
   //empty string for password to go into
   var generatedPassword = ""
 
-  //this pulls my random integers and puts them into a random list
+  //this for loop pulls my random integers and puts them into a random list
   for (var i = 0; i < length; i++) {
     var randomlist = getrandomitem(passwordlist)
     var randomchar = getrandomitem(randomlist)
 
-    //this adds the random character that we have selected and adds it to our generated password string which is where the password is going to appear
+    //this adds the random character that we have selected and adds it to our generated password string 
     generatedPassword += randomchar
   }
-
-
-
-  console.log(generatedPassword);
+  //after all of the functions above which have compiled a list of items to choose from, pulled random characters from the lists the user selects and then using the for loop arranging those random characters into a random order, this will make the text box display the generated password.
+  return generatedPassword
 }
 
 
