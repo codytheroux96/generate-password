@@ -68,6 +68,10 @@ function generatePassword() {
   if (confirmsymbols === true) {
     passwordlist.push(symbolslist)
   }
+  //this states that if the user doesn't select anything to be contained in their password out of the 4 options then they will be met with an alert message
+  if (passwordlist.length ===0){
+    alert("You must select character types for your password")
+  }
   
 
   //empty string for password to go into
