@@ -31,11 +31,18 @@ var confirmuppercase= confirm ("Did you want to include uppercase letters in you
 var confirmsymbols= confirm ("Did you want to include symbols in your password?")
 
 //created arrays that hold the value of every number, lowercase letter, uppercase letter, and symbol
-var numberslist = ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
-var lowercaselist = ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
-var uppercaselist = ("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
-var symbolslist= ("!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "[", "{", "]", "}", "|", ";", ":", "'", "'", ",", "<", ".", ">", "/", "?")
+var numberslist = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+var lowercaselist = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var uppercaselist = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+var symbolslist= ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "[", "{", "]", "}", "|", ";", ":", "'", "'", ",", "<", ".", ">", "/", "?"]
+
+//this variable is what my lists will go in if the vars above are true
+var passwordlist = []
+
+
+
 }
+
 
 
 // Write password to the #password input
