@@ -36,8 +36,22 @@ var lowercaselist = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 var uppercaselist = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 var symbolslist= ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "[", "{", "]", "}", "|", ";", ":", "'", "'", ",", "<", ".", ">", "/", "?"]
 
-//this variable is what my lists will go in if the vars above are true
+//this variable is what my lists will go in if the vars above are true and pull from this list to form a password"
 var passwordlist = []
+
+//this states that if the user selects ok when prompted if they want these in their password then var password list will select from the lists in these arrays
+if (confirmnumbers === true) {
+  passwordlist.push()
+}
+if (confirmlowercase === true){
+  passwordlist.push()
+}
+if (confirmuppercase === true) {
+  passwordlist.push()
+}
+if (confirmsymbols === true){
+  passwordlist.push()
+}
 
 
 
