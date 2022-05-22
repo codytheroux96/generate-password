@@ -3,16 +3,16 @@ var generateBtn = document.querySelector("#generate");
 
 //these functions are being used to pull random integers from my lists
 function randomint(min, max) {
- if (!max){
-   max=min
-   min=0
- }
+  if (!max) {
+    max = min
+    min = 0
+  }
 
- var rand= Math.random()
- return Math.floor(min*(1-rand)+rand*max)
+  var rand = Math.random()
+  return Math.floor(min * (1 - rand) + rand * max)
 }
 
- 
+
 function getrandomitem(list) {
   return list[randomint(list.length)]
 }
@@ -68,11 +68,11 @@ function generatePassword() {
   if (confirmsymbols === true) {
     passwordlist.push(symbolslist)
   }
-  //this states that if the user doesn't select anything to be contained in their password out of the 4 options then they will be met with an alert message
-  if (passwordlist.length ===0){
-    alert("You must select character types for your password")
+
+  //if the user selects no character type options it will default to all symbols
+  if (passwordlist.length === 0) {
+    passwordlist.push(symbolslist)
   }
-  
 
   //empty string for password to go into
   var generatedPassword = ""
@@ -81,14 +81,14 @@ function generatePassword() {
   for (var i = 0; i < length; i++) {
     var randomlist = getrandomitem(passwordlist)
     var randomchar = getrandomitem(randomlist)
-    
+
     //this adds the random character that we have selected and adds it to our generated password string which is where the password is going to appear
     generatedPassword += randomchar
   }
-  
 
 
 
+  console.log(generatedPassword);
 }
 
 
