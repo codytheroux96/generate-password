@@ -8,7 +8,7 @@ function randomInteger(min, max){
 
 //this function will give us a random position in a list
 function randomitem(list){
-  return list[randomInteger(0, passwordlist.length -1)]
+  return list[randomInteger(0, list.length -1)]
 }
 
 function generatePassword() {
@@ -70,7 +70,9 @@ if (confirmsymbols === true){
 
 
  for (var i = 0; i <length; i ++){
-   var item = passwordlist[randomInteger(0, passwordlist.length - 1)]
+   var item = randomitem(passwordlist)
+   var character = randomitem(item)
+   console.log(character)
  }
 
 
