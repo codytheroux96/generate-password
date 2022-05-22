@@ -1,6 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function randomint(min, max) {
+  return Math.floor(Math.random() * (max - min) + min)
+}
+
+function getrandomitem(list) {
+  return list[randomint(0, list.length - 1)]
+}
 
 function generatePassword() {
   //when the user clicks on the generate password button they will be prompted with the question "how many characters do you want in your password?"
@@ -23,42 +30,47 @@ function generatePassword() {
     return
   }
   //making this variable to prompt the user if they want to include numbers in the password by using confirm
-var confirmnumbers= confirm("Did you want to include numbers in your password?")
-//making this variable to prompt the user if they want to include lowercase letters in the password by using confirm
-var confirmlowercase = confirm ("Did you want to include lowercase letters in your password?")
-//making this variable to prompt the user if they want to include uppercase letters in the password by using confirm
-var confirmuppercase= confirm ("Did you want to include uppercase letters in your password?")
-//making this variable to prompt the user if the want to include symbols in the password by using confirm
-var confirmsymbols= confirm ("Did you want to include symbols in your password?")
+  var confirmnumbers = confirm("Did you want to include numbers in your password?")
+  //making this variable to prompt the user if they want to include lowercase letters in the password by using confirm
+  var confirmlowercase = confirm("Did you want to include lowercase letters in your password?")
+  //making this variable to prompt the user if they want to include uppercase letters in the password by using confirm
+  var confirmuppercase = confirm("Did you want to include uppercase letters in your password?")
+  //making this variable to prompt the user if the want to include symbols in the password by using confirm
+  var confirmsymbols = confirm("Did you want to include symbols in your password?")
 
-//created arrays that hold the value of every number, lowercase letter, uppercase letter, and symbol
-var numberslist = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-var lowercaselist = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-var uppercaselist = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-var symbolslist= ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "[", "{", "]", "}", "|", ";", ":", "'", "'", ",", "<", ".", ">", "/", "?"]
+  //created arrays that hold the value of every number, lowercase letter, uppercase letter, and symbol
+  var numberslist = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+  var lowercaselist = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  var uppercaselist = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+  var symbolslist = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "[", "{", "]", "}", "|", ";", ":", "'", "'", ",", "<", ".", ">", "/", "?"]
 
-//this variable is what my lists will go in if the vars above are true and pull from this list to form a password"
-var passwordlist = []
+  //this variable is what my lists will go in if the vars above are true and pull from this list to form a password"
+  var passwordlist = []
 
-//this states that if the user selects ok when prompted if they want these in their password then var password list will select from the lists in these arrays
-if (confirmnumbers === true) {
-  passwordlist.push(numberslist)
-}
-if (confirmlowercase === true){
-  passwordlist.push(lowercaselist)
-}
-if (confirmuppercase === true) {
-  passwordlist.push(uppercaselist)
-}
-if (confirmsymbols === true){
-  passwordlist.push(symbolslist)
-}
-//checking that passwordlist pulls from the correct arrays in correspondence to if they are true or false
- console.log(passwordlist)
+  //this states that if the user selects ok when prompted if they want these in their password then var password list will select from the lists in these arrays
+  if (confirmnumbers === true) {
+    passwordlist.push(numberslist)
+  }
+  if (confirmlowercase === true) {
+    passwordlist.push(lowercaselist)
+  }
+  if (confirmuppercase === true) {
+    passwordlist.push(uppercaselist)
+  }
+  if (confirmsymbols === true) {
+    passwordlist.push(symbolslist)
+  }
+  //checking that passwordlist pulls from the correct arrays in correspondence to if they are true or false
+  console.log(passwordlist)
 
- //empty string for password to go into
- var generatedPassword = ""
+  //empty string for password to go into
+  var generatedPassword = ""
 
+  for (var i = 0; i < length; i++) {
+    var randomlist = getrandomitem(passwordlist)
+    var randomchar = getrandomitem(randomlist)
+    console.log(randomchar)
+  }
 
 
 
