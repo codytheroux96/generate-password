@@ -1,6 +1,11 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+//this function will give us a random integer
+function randomInteger(min, max){
+  return Math.floor(Math.random()*(max - min) + min)
+}
+
 function generatePassword() {
   //when the user clicks on the generate password button they will be prompted with the question "how many characters do you want in your password?"
   var Input = prompt("How many characters do you want in your password?")
@@ -52,7 +57,10 @@ if (confirmuppercase === true) {
 if (confirmsymbols === true){
   passwordlist.push(symbolslist)
 }
+//checking that passwordlist pulls from the correct arrays in correspondence to if they are true or false
  console.log(passwordlist)
+
+ var generatedPassword = ""
 
 
 }
