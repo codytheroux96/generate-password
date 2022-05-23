@@ -35,7 +35,7 @@ function generatePassword() {
   //if the user enters a length greater than 128 they will be prompted with an alert
   if (length > 128) {
     alert("Must be between 8 and 128 characters")
-    return
+    return generatePassword()
   }
   //making this variable to prompt the user if they want to include numbers in the password by using confirm
   var confirmnumbers = confirm("Did you want to include numbers in your password?")
