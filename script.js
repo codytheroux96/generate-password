@@ -25,12 +25,12 @@ function generatePassword() {
   //if the user inputs anything that is not a number it will prompt them with this message
   if (isNaN(length)) {
     alert("That's not a number.")
-    return
+    return generatePassword()
   }
   //if the user enters a length less than 8 they will be prompted with an alert
   if (length < 8) {
     alert("Must be between 8 and 128 characters")
-    return
+    return generatePassword()
   }
   //if the user enters a length greater than 128 they will be prompted with an alert
   if (length > 128) {
